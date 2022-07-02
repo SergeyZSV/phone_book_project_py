@@ -1,0 +1,6 @@
+02.07.22 23:33  --  editing  --  №: 0 -> Name: Игорь  |  Comment: дом  |  Phone: 982391849 
+02.07.22 23:35  --  delete  --  № 0 -> Name: Олег  |  Comment: дом  |  Phone: 982391849 
+03.07.22 00:06  --  export  -> phone_book.txt
+03.07.22 00:06  --  adding  --  № 0 -> Name: Олег  |  Comment: Работа  |  Phone: 342341341 
+03.07.22 00:06  --  export  -> phone_book.txt
+03.07.22 00:13  --  export  -> phone_book.txt
