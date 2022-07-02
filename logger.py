@@ -14,3 +14,8 @@ def log_import_export(operation: str, new_file_direct: str):
     time = datetime.datetime.now().strftime('%d.%m.%y %H:%M')
     with open('log.txt', 'a', encoding='utf-8') as file:
         file.writelines(f'{time}  --  {operation}  -> {new_file_direct}\n')
+
+
+def clear_log():
+    with open('log.txt', 'w') as file:
+        file.write('')

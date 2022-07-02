@@ -38,7 +38,7 @@ def save_changes(book: list, file_directory: str):
             name = book[i][0]
             comment = book[i][1]
             phone = book[i][2]
-            file.writelines(f'{name}**{comment}**{phone}')
+            file.writelines(f'{name}**{comment}**{phone}\n')
 
 
 def import_phone_book(new_file: str, phone_book_file: str, book: list):
@@ -52,7 +52,7 @@ def import_phone_book(new_file: str, phone_book_file: str, book: list):
             name = book[i][0]
             comment = book[i][1]
             phone = book[i][2]
-            file.writelines(f'{name}**{comment}**{phone}')
+            file.writelines(f'{name}**{comment}**{phone}\n')
 
 
 def export_phone_book(book: list, file_directory: str, form: str, new_direct: str = 'export_file'):
@@ -68,4 +68,4 @@ def export_phone_book(book: list, file_directory: str, form: str, new_direct: st
             name = book[i][0]
             comment = book[i][1]
             phone = book[i][2]
-            file.writelines(f'{name}**{comment}**{phone}')
+            file.writelines(f'{name}**{comment}**{phone}\n')

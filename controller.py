@@ -15,8 +15,9 @@ def create_menu():
           '|    3. Редактировать запись         | \n'
           '|    4. Удалить запись               | \n'
           '|    5. Импорт контактов             | \n'
-          '|    6. Экспорт контактов            | \n'            
-          '|    7. Завершить работу             | \n'
+          '|    6. Экспорт контактов            | \n'
+          '|    7. Очистить историю (лог)       | \n'            
+          '|    8. Завершить работу             | \n'
           '--------------------------------------')
 
 
@@ -47,6 +48,7 @@ def program():
             contact_phone = input('Номер телефона: ')
             operations.add_item(phone_item.phone_item(contact_name, contact_comment, contact_phone), phone_book)
             logger.log(len(phone_book) - 1, 'adding', phone_book)
+            operations.save_changes(phone_book, 'phone_book.txt')
 
         elif command == 3:
             operations.open_book(phone_book)
@@ -84,5 +86,8 @@ def program():
             print('Файл успешно экспортирован. \n')
 
         elif command == 7:
+            logger.clear_log()
+
+        elif command == 8:
             operations.save_changes(phone_book, 'phone_book.txt')
             break
