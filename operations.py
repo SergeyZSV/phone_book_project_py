@@ -1,5 +1,4 @@
 import phone_item
-from collections import namedtuple
 
 
 def phone_list(file_directory: str, book: list):
